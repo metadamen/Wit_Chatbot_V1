@@ -104,7 +104,3 @@ if user_input:
         for s in resp['suggestions']:
             st.markdown(f"- {s}")
 
-# Optional: Show all FAQs
-with st.expander("View all FAQs"):
-    for i, row in df.iterrows():
-        st.markdown(f"**Q:** {row['question']}  \n**A:** {row['answer']}")
